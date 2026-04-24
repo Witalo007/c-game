@@ -3,17 +3,14 @@
 #include<iostream>
 
 class blocos {
-
 private:
     sf::Texture texture;
-    
+    sf::Sprite sprite;
+
 
     public:
     blocos();
-
-    void texturaBloco(std::string textura);
-    sf::Sprite criarBloco();
-    void desenhaBloco(sf::RenderWindow& window, sf::Sprite& sprite);
-
+        void texturaBloco(std::string textura);
+    void criarBloco(sf::RenderWindow& window);
 
 };

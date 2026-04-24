@@ -9,7 +9,6 @@ int main() {
     sf::RenderWindow window(sf::VideoMode({500,500}),"game");
 
     chao->texturaBloco("../sprite/blocos/chao.png");
-    chao->criarBloco();
 
 
 
@@ -21,7 +20,7 @@ int main() {
         }
         window.clear(sf::Color::Black);
 
-        chao->desenhaBloco(window,);
+         chao->criarBloco(window);
 
         window.display();
     }
